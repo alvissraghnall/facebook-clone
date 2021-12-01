@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Create New Account</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/createAccount.css" type="text/css" media="all" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Create New Account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/createAccount.css" type="text/css" media="all" />
 </head>
 
 <body>
@@ -14,39 +14,42 @@
     <span><i class="fa fa-chevron-left fa-2x create-header-icon"></i></span>
     <p class="create-header-text"> Join Facebook </p>
   </header>
-  
-  
   <main>
     <div class="highlighted">
       <p class="highlighted-bold">What's your name?</p>
       <p class="highlighted-slimmer">Enter the name you use in real life.</p>
     </div>
-    
-    <form accept-charset="utf-8" id="input-form">
-      <label for="first-name">First Name: </label>
-      <input type="text" name="first-name" />
-      
-      <label for="last-name">Last Name: </label>
-      <input type="text" name="last-name" />
-      
+    <form accept-charset="utf-8">
+      <div id="input-form">
+        <div class="input-group">
+          <label for="first-name">First Name: </label>
+          <input type="text" name="first-name" class="form-field" id="first-name" />
+        </div>
+        <div class="input-group">
+          <label for="last-name">Last Name: </label>
+          <input type="text" name="last-name" class="form-field" id="last-name" />
+        </div>
+      </div>
       <button type="submit" class="form-button"> Next </button>
     </form>
-    <a href="/index.html">Already have an account?</a>
+    <a href="/index.html" class="login-link">Already have an account?</a>
   </main>
-  
   <footer>
     <div class="languages">
-      <a href="">English (US)</a>
-      <a href="">Français (France)</a>
-      <a href="">Deutsche</a>
-      <a href="">Português (Brasil)</a>
-      <a href="">العربية</a>
-      <a href="">Русский</a>
-      <a href="">Español</a>
-      <a href=""></a>
+      <div class="batch-1">
+        <a href="">English (US)</a>
+        <a href="">Français (France)</a>
+        <a href="">Deutsche</a>
+        <a href="">Português (Brasil)</a>
+      </div>
+      <div class="batch-2">
+        <a href="">العربية</a>
+        <a href="">Русский</a>
+        <a href="">Español</a>
+        <a href="">+++</a>
+      </div>
     </div>
-    
-    <p class="final-footer"> Facebook Inc. </p>
+    <p class="final-footer"> &copy; Facebook Inc. </p>
   </footer>
 </body>
 

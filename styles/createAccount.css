@@ -21,9 +21,104 @@ body {
   transform: translate(-50%, -50%);
 }
 
+main {
+  margin: auto;
+}
+
+.highlighted {
+  font-weight: 700;
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.highlighted-slimmer {
+  font-weight: 300;
+  font-size: .4em;
+  margin-top: -2em;
+}
+
+#input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  width: 30em;
+  height: 2em;
+}
+
+label[for=first-name] {
+  color: green;
+}
+
+.form-button {
+  text-align: center;
+  margin: auto;
+  background-color: #1240CE;
+  display: flex;
+  justify-content: center;
+  margin-top: .9rem;
+  width: 24rem;
+  color:whitesmoke;
+  border-radius: 8em;
+}
+
+.login-link {
+  text-decoration: none;
+  margin-top: 1.8rem;
+}
+
+footer {
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.languages {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.batch-1, .batch-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  margin-top: 1rem;
+}
+
+.final-footer {
+  color: black;
+  padding-top: 1.6rem;
+  margin: auto;
+  text-align: center;
+}
+
+
 @media screen and  (min-width: 400px) {
   .create-header {
     height: 47px;
     
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .highlighted {
+    font-weight: 470;
+    font-size: 2.3rem;
+  }
+  
+  #input-form {
+    flex-direction: column;
   }
 }
