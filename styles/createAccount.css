@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.create-header {
+  background: #4267B2;
+  color: whitesmoke;
+  height: 205px;
+  max-height: 2em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.create-header-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and  (min-width: 400px) {
+  .create-header {
+    height: 47px;
+    
+  }
+}
