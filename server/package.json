@@ -1,0 +1,17 @@
+{
+  "name": "facebook-clone",
+  "version": "1.0.0",
+  "description": "Simple Facebook Web Clone built with HTML, CSS and Javascript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/alvissraghnall/facebook-clone.git",
+  "author": "Álviss Raghnall <isiomastewart@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvissraghnall/facebook-clone/issues"
+  },
+  "homepage": "https://github.com/alvissraghnall/facebook-clone#readme",
+  "private": false
+}
