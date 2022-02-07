@@ -1,17 +1,16 @@
 const fastify = require("fastify")({logger: true});
 const fastifyStatic = require("fastify-static");
 const path = require('path');
+const router = require("./routes");
 
 console.log([__dirname.split("/server")].join("").slice(0, -1));
 
 fastify.register(fastifyStatic, {
   root: path.join(__dirname.slice(0, -7), 'client'),
-  prefix: '/public/'
-})
+  prefix: '/'
+});
+fastify.register(router);
 
-fastify.get("/", async (req, reply) => {
-  return reply.sendFile("index.html");
-})
 
 const start = async () => {
   try {
